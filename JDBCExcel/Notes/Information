@@ -1,0 +1,25 @@
+1)Created a Simple Maven Project.
+2)Created data folder
+3)Under data folder created StudentData.xlsx
+  --right click on data-->go to properties-->location-->click-->will lead to folder-->right click-->new-->excelSheet
+ 4)Created a table named Student in DataBase haivng field as in ExcelSheet along with id as primaryKey and it should be auto-increment
+ 5)Adde dependencies to pom.xml
+ -->1)poi-ooxml--Apache POI is a popular API that allows programmers to create, modify, and display MS Office files using Java programs. It is an open source library developed and distributed by Apache Software Foundation to 
+                 design or modify Microsoft Office files using Java program.
+     2)mysql-connector--To insert data to MySQL database from Java, we need to use a dependency for MySQL JDBC driver
+6)In Main program do following steps--
+  1)create a string varible named jdbcURL--stores url of database
+  2)create a string varible named userName--stores userName of database
+  3)create a string varible named password--stores url of password
+  4)1)create a string varible named excelFilePath--stores relative path of our excel file.
+  5)batch size for excuting queries for how did long
+  6)Create Connection
+  7)Create File-->using FileInputStream
+  8)Create WorkBook-->XSSFWorkbook-->High level representation of a SpreadsheetML workbook. This is the first object most userswill construct whether they are reading or writing a workbook. It is also thetop level object for creating new sheets/etc.
+  
+  9)Create Sheet-->XSSFSheet-->High level representation of a SpreadsheetML worksheet. 
+  10)Iterator over Rows-->
+  11)Establish Connection Link-->
+  12)WriteQuery
+  13)Iterate and add data usign Switch Case for various rows
+  14)clsoe workbook.
